@@ -12,16 +12,6 @@ body {
 .top-bar {
     white-space: nowrap;
     float: right;
-	width: 128px;
-	font-size:100%;
-	width: 100%;
-	font-size:100%;
-	padding: 8px 8px;
-	color: black;
-	margin: 8px 8px;
-	box-sizing: border-box;
-	border-radius: 4px;
-	border: 1.5px solid blue;
 }
 
 input {
