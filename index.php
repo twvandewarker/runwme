@@ -7,9 +7,9 @@
 
     <body>
         <div class="top-bar">
-          <a href="newMember.html">Sign Up</a>
+          <a href="newMember.html"> <div class="blink" >Sign Up</div> </a>
           &emsp;
-          <a href="login_page">Log In</a>
+          <a href="login.html"><div class="blink" >Log In</div> </a>
         </div>
         
         <br />
