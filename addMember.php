@@ -15,24 +15,22 @@ echo '
   $name = $_POST["Name"];
   $mode = $_POST["Mode"];
   $avail = $_POST["Availability"];
-  $city = $_POST["XCoords"];
-  $state = $_POST["YCoords"];
+  $xcoords = $_POST["XCoords"];
+  $ycoords = $_POST["YCoords"];
   $bio = $_POST["Bio"];
   $info= $_POST["Contactinfo"];
 
+  include ("connectDb.php");
   //get variables from readDB.php
   include ("readDb.php");
 
   //add users now
   if ($found == 0) {
+  
+       // Hash password
+       $hash = password_hash($pass, PASSWORD_DEFAULT);
 
-    if ($user && $pass && $name && $info){
-		
-		// hash code here
-
-      include ("connectDb.php");
-
-      $sql = "INSERT INTO runwme_users (username, real_name, password_hash, password_salt, run_walk_bike, times_available, location_x, location_y, bio, contact_info) VALUES ('$user' ,'$name', '$pass', '$pass','$mode', '$avail', '$city', '$state', '$bio', '$info')";
+       $sql = "INSERT INTO runwme_users (username, real_name, password_hash, run_walk_bike, times_available, location_x, location_y, bio, contact_info) VALUES ('$user' ,'$name', '$hash', '$mode', '$avail', '$xcoords', '$ycoords', '$bio', '$info')";
 
       $result = mysqli_query($conn, $sql);
 
@@ -40,7 +38,7 @@ echo '
         // login the user if just created
         include("login.php");
       } else {
- 			  echo '
+        echo '
           <font color="#FF0000"><b><i> Error. Please Try Again.</b></i></font>
         ';
       }
@@ -57,7 +55,7 @@ echo '
   } else {
     echo '
       <p>Username already exists. Please log-in. Redirecting you home. <p/>
-      <meta http-equiv="refresh" content="3; url=indexphp" />
+      <meta http-equiv="refresh" content="3; url=index.html" />
     ';
   }
 
