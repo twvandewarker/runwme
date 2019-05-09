@@ -8,7 +8,7 @@
     <body>
         <div class="top-bar">
           <a href="signup_page">Sign Up</a>
-          <p>&emsp;</p>
+          &emsp;
           <a href="login_page">Log In</a>
         </div>
         
