@@ -8,7 +8,6 @@
     <body>
         <div class="top-bar">
           <a href="signup_page">Sign Up</a>
-          <pre>&emsp</pre>
           <a href="login_page">Log In</a>
         </div>
         
@@ -17,7 +16,7 @@
         <br />
 
         <center>
-            <img src="logo.png" alt="runwme Logo" />
+            <img src="logo.png" style="width=80%" alt="runwme Logo" />
         </center
 
     </body>
