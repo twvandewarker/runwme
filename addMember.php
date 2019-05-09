@@ -56,7 +56,7 @@ echo '
 
   } else {
     echo '
-      <p>Email already exists. Please log-in. Redirecting you home <p/>
+      <p>Username already exists. Please log-in. Redirecting you home <p/>
       <meta http-equiv="refresh" content="3; url=isindexSearch.php" />
     ';
   }
