@@ -4,7 +4,7 @@
   include ("connectDb.php");
 
   // Here is another way of making an SQL query.
-  $sqlt = "SELECT * FROM ridersdb WHERE Email = '$email'";
+  $sqlt = "SELECT * FROM ridewme_users WHERE username = '$username'";
 
   // Again, Send the request
   $result = mysqli_query($conn, $sqlt);
@@ -16,7 +16,7 @@
   else {
   	$found = number_format(mysqli_num_rows($result));
   	$row = mysqli_fetch_array($result);
-  	$passdB = $row["Pass"];    //find password
+  	$hash = $row["password_hash"];    //find password
   }
 
   mysqli_close($conn);

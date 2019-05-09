@@ -3,7 +3,7 @@
 echo '
 <html>
   <head>
-    <title>Member Registration</title>
+    <title>runw/me addmember</title>
   </head>
   
   <body>
@@ -15,8 +15,8 @@ echo '
   $name = $_POST["Name"];
   $mode = $_POST["Mode"];
   $avail = $_POST["Availability"];
-  $city = $_POST["City"];
-  $state = $_POST["State"];
+  $city = $_POST["XCoords"];
+  $state = $_POST["YCoords"];
   $bio = $_POST["Bio"];
   $info= $_POST["Contactinfo"];
 
