@@ -6,11 +6,13 @@
     </head>
 
     <body>
-        <right>
-            <a href="../signup_page"> Sign Up </a>
-            <p> &emsp </p>
-            <a href="login_page"> Log In </a>
-        </right>
+      <right>
+        <nobr>
+          <a href="../signup_page"> Sign Up </a>
+          &emsp
+          a href="login_page"> Log In </a>
+        </nobr>
+      </right>
         
         <br />
         <br />
