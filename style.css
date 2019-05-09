@@ -1,3 +1,4 @@
-.right {
-    text-align: right;
+.top_bar {
+    white-space: nowrap;
+    float: right;
 }

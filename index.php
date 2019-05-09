@@ -6,11 +6,12 @@
     </head>
 
     <body>
-        <nobr class = "right">
+        <div class="top-bar">>
           <a href="signup_page">Sign Up</a>
           <pre>&emsp</pre>
           <a href="login_page">Log In</a>
-        </nobr>        
+        </div>
+        
         <br />
         <br />
         <br />
