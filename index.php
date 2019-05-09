@@ -16,7 +16,7 @@
         <br />
 
         <center>
-            <img src="logo.png" style="width=80%" alt="runwme Logo" />
+            <img src="logo.png" style="width:80%" alt="runwme Logo" />
         </center
 
     </body>
