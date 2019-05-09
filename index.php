@@ -6,7 +6,7 @@
     </head>
 
     <body>
-        <div class="top-bar">>
+        <div class="top-bar">
           <a href="signup_page">Sign Up</a>
           <pre>&emsp</pre>
           <a href="login_page">Log In</a>
