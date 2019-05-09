@@ -59,23 +59,23 @@
 
       <form name="new" action="addMember.php" onsubmit="return checkRequired()" method="post">
 
-        <p1>We cant wait to go on a run with you!</p1><br /><br />
+        <p1>We can't wait to go on a run with you!</p1><br /><br />
 		<table style="width:30%; align:center;">
 		<tr>
-        <td><label for="User">New Username:</label> </td> <td><input type="text" name="User" /></td>
+        <td><label for="User">New Username (cannot change later):</label> </td> <td><input required type="text" name="User" /></td>
 		</tr><tr>
-        <td><label for="Pass">New Password: </label></td> <td><input type="password" name ="Pass" /></td>
+        <td><label for="Pass">New Password: </label></td> <td><input required type="password" name ="Pass" /></td>
 		</tr><tr>
-        <td><label for="Name"> Profile Name: </label></td> <td><input type="text" name="Name" /></td>
+        <td><label for="Name"> First Name (cannot change later): </label></td> <td><input required type="text" name="Name" /></td>
 		</tr><tr>
         <td><label for="Mode"> Activities: </label></td> 
-		<td><select name="Mode" multiple size="3">
+		<td><select required name="Mode" multiple size="3">
 			  <option value="Run">Run</option>
 			  <option value="Walk">Walk</option>
 			  <option value="Bike">Bike</option>
 			</select></td>
 		</tr><tr>
-        <td><label for="Availability">Availability:</label></td> <td><select name="Availability" multiple size="1">
+        <td><label for="Availability">Availability:</label></td> <td><select required name="Availability" multiple size="4">
 			  <option value="MM">Monday Morning</option>
 			  <option value="MA">Monday Afternoon</option>
 			  <option value="ME">Monday Evening</option>
@@ -84,13 +84,13 @@
 			  <option value="TE">Tuesday Evening</option>
 			</select></td>
 		</tr><tr>
-        <td><label for="City">City:</label></td> <td><input type="text" name="City" /></td>
+        <td><label for="XCoords">X Coordinates:</label></td> <td><input type="text" name="XCoords" /></td>
 		</tr><tr>
-        <td><label for="State">State:</label></td> <td><input type="text" name="State" /></td>
+        <td><label for="YCoords">Y Coordinates:</label></td> <td><input type="text" name="YCoords" /></td>
 		</tr><tr>
         <td><label for="Bio">Bio:</label></td> <td><input type="text" name="Bio" /></td>
 		</tr><tr>
-        <td><label for="Contactinfo">Contact Information:</label></td> <td><input type="text" name="Contactinfo" /></td>
+        <td><label for="Contactinfo">Contact Information (this will stay private to everyone except your buddies):</label></td> <td><input type="text" name="Contactinfo" /></td>
 		</tr>
 		</table>
 		<br />
