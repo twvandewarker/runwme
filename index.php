@@ -2,12 +2,23 @@
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="style.css" />
-        <title> RunwMe </title>
+        <title> runw/me </title>
     </head>
 
     <body>
-        <h1> Test Heading </h1>
+        <right>
+            <a href="../signup_page"> Sign Up </a>
+            <p> &emsp </p>
+            <a href="login_page"> Log In </a>
+        </right>
         
-        <p> Test paragraph </p>
+        <br />
+        <br />
+        <br />
+
+        <center>
+            <img src="pictureoflogo.png" alt="runwme Logo" />
+        </center
+
     </body>
 </html>
