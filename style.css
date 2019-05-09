@@ -24,7 +24,7 @@ input {
     border-radius: 4px;
     border: 1.5px solid blue;
 }
-	
+
 input[type=submit] {
     width: 128px;
     font-size:100%;
@@ -34,6 +34,16 @@ select {
     width: 100%;
     padding: 4px 4px;
     margin: 8px 8px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1.5px solid blue;
+}
+
+.blink {
+    width: 128px;
+    font-size:100%;
+    padding: 8px 8px;
+    color: black;
     box-sizing: border-box;
     border-radius: 4px;
     border: 1.5px solid blue;
