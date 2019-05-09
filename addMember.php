@@ -26,13 +26,13 @@ echo '
   //add users now
   if ($found == 0) {
 
-    if ($fname && $lname && $pass && $email){
+    if ($user && $pass && $name && $info){
 		
 		// hash code here
 
       include ("connectDb.php");
 
-      $sql = "INSERT INTO runwme_users (username, real_name, password_hash, password_salt, run_walk_bike, times_available, location_x, location_y, bio, contact_info) VALUES ('$user' ,'$lname', '$pass', '$pass','$mode', '$avail', '$city', '$state', '$bio', '$info')";
+      $sql = "INSERT INTO runwme_users (username, real_name, password_hash, password_salt, run_walk_bike, times_available, location_x, location_y, bio, contact_info) VALUES ('$user' ,'$name', '$pass', '$pass','$mode', '$avail', '$city', '$state', '$bio', '$info')";
 
       $result = mysqli_query($conn, $sql);
 
