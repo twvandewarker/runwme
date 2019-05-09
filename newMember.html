@@ -1,68 +1,64 @@
 <html>
-	<head>
-    <title>runw/me signup</title>
+    <head>
+        <title>runw/me signup</title>
 	<link rel="stylesheet" type="text/css" href="style.css" />
-    <!--<link href='http://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'> -->
-	
-  </head>
+    </head>
 
-  <script src="validation.js" ></script>
+    <script src="validation.js" ></script>
 
-  <body bgcolor="white" text="black" style="font-family:'Nunito', sans-serif;">
-    <center>
-
+    <body>
       <br /> <br />
 
-      <img src ="logo.png", align="middle", style="width:50%;"/>
+      <img src ="logo.png", align="middle", style="width:50%; align:center"/>
 
       <br /><br /><br />
 
-      <form name="new" action="addMember.php" onsubmit="return checkRequired()" method="post">
+      <p1>We can't wait to go on a run with you!</p1><br /><br />
 
-        <p1>We can't wait to go on a run with you!</p1><br /><br />
-		<table style="width:50%; align:center;">
-		<col width="50%">
-		<col width="50%">
-		<tr>
-        <td><label for="User">New Username (cannot change later):</label> </td> <td><input required type="text" name="User" /></td>
-		</tr><tr>
-        <td><label for="Pass">New Password: </label></td> <td><input required type="password" name ="Pass" /></td>
-		</tr><tr>
-        <td><label for="Name"> First Name (cannot change later): </label></td> <td><input required type="text" name="Name" /></td>
-		</tr><tr>
-        <td><label for="Mode"> Activities: </label></td> 
-		<td><select required name="Mode" multiple size="3">
-			  <option value="Run">Run</option>
-			  <option value="Walk">Walk</option>
-			  <option value="Bike">Bike</option>
-			</select></td>
-		</tr><tr>
-        <td><label for="Availability">Availability:</label></td> <td><select required name="Availability" multiple size="4">
-			  <option value="MM">Monday Morning</option>
-			  <option value="MA">Monday Afternoon</option>
-			  <option value="ME">Monday Evening</option>
-			  <option value="TM">Tuesday Morning</option>
-			  <option value="TA">Tuesday Afternoon</option>
-			  <option value="TE">Tuesday Evening</option>
-			</select></td>
-		</tr><tr>
-        <td><label for="XCoords">X Coordinates:</label></td> <td><input type="text" name="XCoords" /></td>
-		</tr><tr>
-        <td><label for="YCoords">Y Coordinates:</label></td> <td><input type="text" name="YCoords" /></td>
-		</tr><tr>
-        <td><label for="Bio">Bio:</label></td> <td><input type="text" name="Bio" /></td>
-		</tr><tr>
-        <td><label for="Contactinfo">Contact Information (this will stay private to everyone except your buddies):</label></td> <td><input type="text" name="Contactinfo" /></td>
-		</tr>
-		</table>
-		<br />
-<!-- Don't use absolute size, use percent -->      <input style="width=40px;" type="submit"  value="Submit" />
+      <form name="new" action="addMember.php" onsubmit="return checkRequired()" method="post">
+        <table style="width:50%; align:center;">
+	  <col width="50%">
+	  <col width="50%">
+	  <tr>
+            <td><label for="User">New Username (cannot change later):</label> </td> <td><input required type="text" name="User" /></td>
+	  </tr><tr>
+            <td><label for="Pass">New Password: </label></td> <td><input required type="password" name ="Pass" /></td>
+	  </tr><tr>
+            <td><label for="Name"> First Name (cannot change later): </label></td> <td><input required type="text" name="Name" /></td>
+	  </tr><tr>
+            <td><label for="Mode"> Activities: </label></td> 
+	    <td><select required name="Mode" multiple size="3">
+                <option value="Run">Run</option>
+		<option value="Walk">Walk</option>
+		<option value="Bike">Bike</option>
+	    </select></td>
+          </tr><tr>
+            <td><label for="Availability">Availability:</label></td> <td><select required name="Availability" multiple size="4">
+                <option value="MM">Monday Morning</option>
+                <option value="MA">Monday Afternoon</option>
+                <option value="ME">Monday Evening</option>
+                <option value="TM">Tuesday Morning</option>
+                <option value="TA">Tuesday Afternoon</option>
+                <option value="TE">Tuesday Evening</option>
+            </select></td>
+          </tr><tr>
+            <td><label for="XCoords">X Coordinates:</label></td> <td><input required type="text" name="XCoords" /></td>
+          </tr><tr>
+            <td><label for="YCoords">Y Coordinates:</label></td> <td><input required type="text" name="YCoords" /></td>
+          </tr><tr>
+            <td><label for="Bio">Bio:</label></td> <td><input type="text" name="Bio" /></td>
+          </tr><tr>
+            <td><label for="Contactinfo">Contact Information (this will stay private to everyone except your buddies):</label></td> <td><input required type="text" name="Contactinfo" /></td>
+          </tr>
+        </table>
+        <br />
+        <input style="width=40px;" type="submit"  value="Submit" />
       </form>
 
       <br />
-      <p> You can always edit everything later on except for your username and name! </p> <p> Shift-click to select multiple activities and availabilities. </p>
+      <p>You can always edit everything later on except for your username and name!</p>
+      <p>Control-click to select multiple activities and availabilities.</p>
+      <br />
       <a href="index.php"> Return to Homepage </a>
-
-    </center>
   </body>
 </html>
