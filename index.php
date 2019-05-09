@@ -7,7 +7,7 @@
 
     <body>
         <div class="top-bar">
-          <a href="signup_page">Sign Up</a>
+          <a href="newMember.html">Sign Up</a>
           &emsp;
           <a href="login_page">Log In</a>
         </div>
