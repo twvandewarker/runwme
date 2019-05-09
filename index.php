@@ -6,20 +6,17 @@
     </head>
 
     <body>
-      <right>
-        <nobr>
-          <a href="../signup_page">Sign Up</a>
+        <nobr class = "right">
+          <a href="signup_page">Sign Up</a>
           <pre>&emsp</pre>
           <a href="login_page">Log In</a>
-        </nobr>
-      </right>
-        
+        </nobr>        
         <br />
         <br />
         <br />
 
         <center>
-            <img src="pictureoflogo.png" alt="runwme Logo" />
+            <img src="logo.png" alt="runwme Logo" />
         </center
 
     </body>
