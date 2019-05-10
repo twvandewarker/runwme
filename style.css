@@ -93,6 +93,7 @@ option {
 .tiles {
   display: grid;
   grid-gap: 15px;
+  width:80%;
   grid-template-columns: repeat(auto-fit, 200px);
 }
 .tiles > div {
