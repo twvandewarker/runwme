@@ -8,11 +8,6 @@
   // Perform query
   $result = mysqli_query($conn, $query);
 
-  // Again, Send the request
-  $result = mysqli_query($conn, $sqlt);
-
-
-
   // See if we get an OK result
   if (!$result) {
       echo 'died';
