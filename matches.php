@@ -35,6 +35,7 @@ echo '
             
             if($found2) {
             foreach ($matches as &$id){
+                echo $id;
                 //$query = "SELECT username, real_name, location_x, location_y, times_available, run_walk_bike, bio FROM runwme_users WHERE username = '$id'";
                 //$result = mysqli_query($conn, $query);
                 //$row = mysql_fetch_assoc($result); 
