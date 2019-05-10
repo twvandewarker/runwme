@@ -1,12 +1,9 @@
 <?php
 
 
-echo "Finished setting sqlt\n";
 
-  // Again, Send the request
-  echo $user;
 
-  // See if we get an OK result
+  // See if we have an OK result
   if (!$result) {
     die("SQL Error Getting User Information: " . mysqli_error($conn));
     echo 'died';
