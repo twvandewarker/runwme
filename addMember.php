@@ -9,7 +9,7 @@
 <?php
 
 echo "Testing php";
-
+/*
   //get variables
   $user = $_POST["User"];
   $pass = $_POST["Pass"];
@@ -58,7 +58,7 @@ echo "Testing php";
       <meta http-equiv="refresh" content="3; url=index.html" />
     ';
   }
-
+*/
 ?>
 </body>
 </html>
