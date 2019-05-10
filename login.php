@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html>
     <head>
         <title>Password Verification</title>
@@ -9,7 +8,7 @@
     <body>
 
 <?php
-
+ // Check for cookies
   $user = isset($user) ? $user : $_POST["User"];
   $pass = isset($pass) ? $pass : $_POST["Pass"];
 
@@ -17,13 +16,13 @@
 
      echo '
      <p>Empty Field. Please try again. Redirecting you back.</p> 
-        <meta http-equiv="refresh" content="3; url=index.html" />
+        <meta http-equiv="refresh" content="3; url=login.html" />
         </body>
         </html>
      ';
 
-  } else {
-
+  }
+  else {
     include ("readDb.php");
 
     if ($found == 0) {
@@ -35,18 +34,19 @@
           </html>
       ';
 
-    } else {
-      
+  }
+  else {
       if (!password_verify($pass, $hash_returned) {
 
         echo '
             <p>Wrong password. Please try again. Redirecting you back.</p>
-            <meta http-equiv="refresh" content="3; url=index.php" />
+            <meta http-equiv="refresh" content="3; url=login.html" />
             </body>
             </html>
         ';
 
-      } else {
+      }
+      else {
         include("profile.php");
       }
     }
