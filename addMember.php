@@ -28,7 +28,7 @@
         $hash = password_hash($pass, PASSWORD_DEFAULT);
 
         include ("connectDb.php");
-        //include("transformations.php");
+        include("transformations.php");
         echo ''. $avail .' '. $mode .'';
         //$times = TimeToNum($avail);
         //$modes = ModeToNum($mode);
