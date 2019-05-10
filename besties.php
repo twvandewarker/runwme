@@ -33,18 +33,21 @@ echo '
                 
             include("getBesties.php")
             if($found) {
+            include ("connectDb.php");
+               
             foreach ($besties as &$id){
-                $query = "SELECT username, real_name, location_x, location_y, times_available, run_walk_bike, bio, contact_info FROM runwme_users WHERE username = '$id'";
-                $result = mysqli_query($conn, $query);
-                $row = mysql_fetch_assoc($result)
+                $query2 = "SELECT * FROM runwme_users WHERE username = '$id'";
+                $newresult = mysqli_query($conn, $query2);
+                $newrow = mysqli_fetch_array($newresult); 
                 echo '<div>
                 <img src ="runman.png" align="center" style="height:20%"/>
-                <p style="font-size:150%" align=center> ' . $row["real_name"] . '</p>
-                <p style="font-size:80%" align=center> ' . $row["location_x"] . ',  ' . $row["location_y"] . '</p>
-                <p align=center> Bio: ' . $row["bio"] . '</p> 
-                <p align=center>' . $row["contact_info"] . '</p> 
+                <p style="font-size:150%" align=center> ' . $newrow["real_name"] . '</p>
+                <p style="font-size:80%" align=center> ' . $newrow["location_x"] . ',  ' . $newrow["location_y"] . '</p>
+                <p align=center> Bio: ' . $newrow["bio"] . '</p> 
+                <p align=center>' . $newrow["contact_info"] . '</p> 
                 <div>'
             }  
+            mysqli_close($conn); 
             echo '
                 </div>
 <br />
