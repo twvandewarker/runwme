@@ -5,7 +5,7 @@
 <?php
 
     $user = isset($user) ? $user : $_POST["User"];
-    
+    include ("readDb.php");
     echo '
     <title> "runwme ' . $row["real_name"] . '"</title>   
     </head>
