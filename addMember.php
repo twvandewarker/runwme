@@ -26,14 +26,14 @@ echo "Started php, made variables from post";
   include ("readDb.php");
 
 echo "Finished readDb.php";
-/*
+
   //add users now
   if ($found == 0) {
        // Hash password
        $hash = password_hash($pass, PASSWORD_DEFAULT);
 
 echo "Hashed password";
-
+/*
 include ("connectDb.php");
 
        $sql = "INSERT INTO runwme_users (username, real_name, password_hash, run_walk_bike, times_available, location_x, location_y, bio, contact_info) VALUES ('$user' ,'$name', '$hash', '$mode', '$avail', '$xcoords', '$ycoords', '$bio', '$info')";
