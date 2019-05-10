@@ -22,7 +22,7 @@
   //get variables from readDB.php
   include ("readDb.php");
 
-/*
+
   //add users now
   if ($found == 0) {
        // Hash password
@@ -60,7 +60,7 @@ include ("connectDb.php");
       <meta http-equiv="refresh" content="3; url=index.html" />
     ';
   }
-*/
+
 ?>
 </body>
 </html>
