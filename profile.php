@@ -3,6 +3,9 @@
     <head>
         <link rel="stylesheet" type="text/css" href="style.css" />
 <?php
+
+    $user = isset($user) ? $user : $_POST["User"];
+    
     echo '
     <title> "runwme ' . $row["real_name"] . '"</title>   
     </head>
@@ -10,9 +13,12 @@
     <body>
     <ul class="menu">
 
-    <li><a href="profile.php">Profile</a></li>
-    <li><a href="#contact">Matches</a></li>
-    <li><a href="#about">Besties</a></li>
+    <li><form method="post" action="profile.php" class="inline">
+  <button type="submit" name="User" value="'. $user .'" class="link-button">Profile</button></form></li>
+    <li><form method="post" action="matches.php" class="inline">
+  <button type="submit" name="User" value="'. $user .'" class="link-button">Matches</button></form></li>
+    <li><form method="post" action="besties.php" class="inline">
+  <button type="submit" name="User" value="'. $user .'" class="link-button">Buddies</button></form></li>
     <img src ="logo.png" />
     </ul>
     

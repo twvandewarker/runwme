@@ -1,4 +1,9 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css" />
 <?php
+$user = isset($user) ? $user : $_POST["User"];
 echo '
 <html>
 <head>
@@ -8,12 +13,15 @@ echo '
     </head>
         <body>
             <ul class="menu">
-              
-              <li><a href="profile.php">Profile</a></li>
-              <li><a href="matches.php">Matches</a></li>
-              <li><a href="besties.php">Besties</a></li>
-              <img src ="logo.png" />
-            </ul>
+
+                <li><form method="post" action="profile.php" class="inline">
+              <button type="submit" name="User" value="'. $user .'" class="link-button">Profile</button></form></li>
+                <li><form method="post" action="matches.php" class="inline">
+              <button type="submit" name="User" value="'. $user .'" class="link-button">Matches</button></form></li>
+                <li><form method="post" action="besties.php" class="inline">
+              <button type="submit" name="User" value="'. $user .'" class="link-button">Buddies</button></form></li>
+                <img src ="logo.png" />
+                </ul>
           <div>
             <center>
               <br /> <br /> 
