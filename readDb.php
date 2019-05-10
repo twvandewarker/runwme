@@ -10,6 +10,8 @@ echo $sqlt;
   // Again, Send the request
   $result = mysqli_query($conn, $sqlt);
 
+echo $result;
+
   // See if we get an OK result
   if (!$result) {
     die("SQL Error Getting User Information: " . mysqli_error($conn));
