@@ -67,6 +67,9 @@ include ("connectDb.php");
     ';
   }
 
-?>
+echo '
 </body>
 </html>
+';
+
+?>
