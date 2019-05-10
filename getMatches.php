@@ -31,6 +31,7 @@
                 if (($row["times_available"] & $arow["times_available"]) &&
                 ($row["run_walk_bike"] & $arow["run_walk_bike"])){
                     array_push($matches, $arow["username"]);
+                    echo 'new match founbd';
                 }
                 
             }
