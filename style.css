@@ -125,7 +125,7 @@ option {
     padding: 8px 8px;
 }
 
-.menu li a {
+.menu li button {
   display: block;
   color: white;
   text-align: center;
