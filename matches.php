@@ -30,8 +30,8 @@ echo '
               <br />
                 <div class="tiles">
                 ';
-                /*
-            include("getMatches.php")
+                
+            include("getMatches.php")/*
             if($found2) {
             foreach ($matches as &$id){
                 $query = "SELECT username, real_name, location_x, location_y, times_available, run_walk_bike, bio FROM runwme_users WHERE username = '$id'";
