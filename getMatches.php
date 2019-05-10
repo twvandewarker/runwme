@@ -5,7 +5,8 @@ include ("connectDb.php");
 
 echo '<p>Finished include</p>';
 
-  $sqlt = "SELECT location_x, location_y, times_available, run_walk_bike FROM runwme_users WHERE username = '. $user . '";
+
+  $sqlt = "SELECT * FROM runwme_users WHERE username = '$user'";
 
 echo "Finished setting sqlt\n";
 /
