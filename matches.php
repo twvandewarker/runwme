@@ -40,6 +40,7 @@ echo '
                 $query2 = "SELECT * FROM runwme_users WHERE username = '$id'";
                 $newresult = mysqli_query($conn, $query2);
                 $newrow = mysql_fetch_assoc($newresult); 
+                echo 'here';
                 echo '<div>
                 <img src ="runman.png" align="center" style="width:50%"/>
                 <p style="font-size:150%" align=center> ' . $newrow["real_name"] . '</p>
