@@ -43,14 +43,8 @@ echo '
                 <p style="font-size:150%" align=center> ' . $row["real_name"] . '</p>
                 <p style="font-size:80%" align=center> ' . $row["location_x"] . ',  ' . $row["location_y"] . '</p>
                 <p align=center> Bio: ' . $row["bio"] . '</p> 
-                <div>';
-                }  
-                echo '<div>
-                <img src ="runman.png" align="center" style="height:20%"/>
-                <p style="font-size:150%" align=center> ' . $row["real_name"] . '</p>
-                <p style="font-size:80%" align=center> ' . $row["location_x"] . ',  ' . $row["location_y"] . '</p>
-                <p align=center> Bio: ' . $row["bio"] . '</p> 
-                <div>';
+                </div>';
+                } 
                  
             }
             
