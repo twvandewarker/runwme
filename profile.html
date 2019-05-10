@@ -4,11 +4,14 @@
 	<link rel="stylesheet" type="text/css" href="style.css" />
    
     </head>
-          <body>
+        <body>
+            <div class="menu-bar">
+              <img src ="logo.png" align=left style="height:5%"/>
+            <button type="button" align=left class="blink"> Matches </button> <button type="button" align=center class="blink"> Profile </button> <button type="button" align=right class="blink"> Besties </button>
+            </div>
           
-              <img src ="logo.png" align="top" style="height:10%"/>
             <center>
-              <br />
+              <br /> <br /> <br />
               <p style="font-size:120%">Hi ' . $row["real_name"] . ', welcome back! Here is your profile:</p>
               <br />
                 <div class="prof_box">
@@ -43,7 +46,7 @@
             
             <br />
 
-            <a href="index.php" style="vertical-align: baseline;"> Return to Homepage </a>
+            <a href="index.html" style="vertical-align: baseline;"> Return to Homepage </a>
 
           </center>
         </body>

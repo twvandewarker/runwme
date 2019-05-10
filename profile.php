@@ -33,7 +33,7 @@ echo '
             
             <br />
 
-            <a href="index.php" style="vertical-align: baseline;"> Return to Homepage </a>
+            <a href="index.html" style="vertical-align: baseline;"> Return to Homepage </a>
 
           </center>
         </body>
