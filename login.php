@@ -18,8 +18,6 @@
      echo '
      <p>Empty Field. Please try again. Redirecting you back.</p> 
         <meta http-equiv="refresh" content="3; url=login.html" />
-        </body>
-        </html>
      ';
   }
 
@@ -35,30 +33,27 @@
       echo '
           <p>Username not found. Please try again. Redirecting you back.</p>
           <meta http-equiv="refresh" content="3; url=login.html" />
-          </body>
-          </html>
       ';
 
     }
     else {
 echo "about to test password <br />";
-echo $hash_returned . "<br />";
       /*if (password_verify($pass, $hash_returned) {
         include("profile.php");
       } */
 
-      else {
+      //else {
         echo '
             <p>Wrong password. Please try again. Redirecting you back.</p>
             <meta http-equiv="refresh" content="3; url=login.html" />
-            </body>
-            </html>
         ';
-      }
+      //}
     }
   }
 
 ?>
 
 
+</body>
+</html>
 
