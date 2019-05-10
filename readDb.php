@@ -8,6 +8,8 @@
   // Perform query
   $result = mysqli_query($conn, $query);
 
+echo $result
+
   // See if we get an OK result
   if (!$result) {
     die("SQL Error Getting User Information: " . mysql_error($conn));
