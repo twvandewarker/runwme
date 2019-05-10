@@ -8,14 +8,14 @@ echo '<p>Finished include</p>';
   $sqlt = "SELECT location_x, location_y, times_available, run_walk_bike FROM runwme_users WHERE username = '$user'";
 
 echo "Finished setting sqlt\n";
-/*
+/
   // Again, Send the request
   $user_result = mysqli_query($conn, $sqlt);
 
   // See if we get an OK result
   if (!$user_result) {
     die("SQL Error Getting User Information: " . mysqli_error($conn));
-  }
+  }/*
   else {
     $matches = array();
   	$found = number_format(mysqli_num_rows($user_result));
