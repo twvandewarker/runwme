@@ -18,8 +18,7 @@
   	$found = number_format(mysqli_num_rows($result));
   	$row = mysqli_fetch_array($result);
   	$hash_returned = $row["password_hash"];    //find password hash
-    echo 'here';
-  }
+}
 
   mysqli_close($conn);
 

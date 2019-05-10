@@ -40,7 +40,8 @@
 echo "pass: " . $pass . "<br />";
 echo "hash_returned: " . $hash_returned . "<br />";          
 echo "about to test password <br />";
-     // if (password_verify($pass, $hash_returned) {
+        $password_good = password_verify ($pass, $hash_returned);
+     // if (password_good) {
         //include("profile.php");
        // echo "good pass";
       //} 
