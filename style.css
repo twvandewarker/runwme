@@ -48,6 +48,7 @@ select {
     float:right;
     padding: 8px 8px;
     margin: 8px 8px;
+    display: inline;
     color: black;
     box-sizing: border-box;
     border-radius: 4px;
