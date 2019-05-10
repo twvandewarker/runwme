@@ -1,67 +1,44 @@
-'
-          <html>
-            <title> "The HandyRides - ' . $row[fName] . '\'s profile."</title>
-          <body bgcolor="white" text="black">
+<html>
+<head>
+    <title> "runwme ' . $row["real_name"] . '"</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+    </head>
+          <body>
+          
+              <img src ="logo.png" align="top" style="height:10%"/>
             <center>
-              <img src ="logo.jpg" />
               <br />
-              <p>Hi ' . $row[fName] . ' welcome back! Here is your trip information:</p>
+              <p>Hi ' . $row["real_name"] . ', welcome back! Here is your profile:</p>
               <br />
 
-            <table bgcolor="white" border="1" cellspacing="2" cellpadding="4" width="60%">
-              <tr bgcolor="white">
-                <th>First Name</th> 
-                <th>Last Name</th> 
-                <th>Origin</th>
-                <th>Destination</th>
-                <th>Departure Date</th>
-                <th>Departure Time</th>
-                <th>Has Car</th>
-                <th>Available Seats</th>
-              </tr>
+                <p style="font-size:120%" align=center> ' . $row["real_name"] . '</p>
+                <p style="font-size:80%" align=center> ' . $row["username"] . '</p>
+                <p style="font-size:80%" align=center> ' . $row["location_x"] . ',  ' . $row["location_y"] . '</p>
+                <p style="font-size:80%" align=center> ' . $row["contact_info"] . '</p>
+                <div class="bio_box"> <p align=center> ' . $row["bio"] . '</p> </div>
+<br />
+              <p>Hi Rhea, welcome back! Here is your profile:</p>
+              <br />
 
-              <tr>
-                <td align=center> ' . $row["fName"] . '</td>
-                <td align=center> ' . $row["lName"] . '</td>
-                <td align=center> ' . $row["Origin"] . '</td>
-                <td align=center> ' . $row["Destination"] . '</td>
-                <td align=center> ' . $row["dDate"] . '</td>
-                <td align=center> ' . $row["dTime"] . '</td>
-                <td align=center> ' . $row["Hascar"] . '</td>
-                <td align=center> ' . $row["Seats"] . '</td>
-              </tr>
-            </table>
+                <p style="font-size:150%" align=center> Rhea</p>
+                <p style="font-size:80%" align=center> rheab</p>
+                <p style="font-size:80%" align=center> 71.4834782,  40.3984</p>
+                <p style="font-size:80%" align=center> (609)-275-5767</p>
+                <div class="bio_box"> <p align=center>  Note blocks were added to Minecraft alongside charcoal, lapis lazuli, dispensers, cake and squid in version Beta 1.2, which was released on 13 January 2011. That makes them seven years old, probably older than some of our youngest players. Right click to tune, trigger to play were the instructions given in the release notes at the time, which still hold true today. When you hit one or give it a redstone pulse, a little note will pop out of the top and anyone within 48 blocks will hear a sound - with the volume decreasing as you get further away.</p> </div>
+
 
             <br /><br />
 
-            <h3>Update Trip</h3>
-            <form name="new" action="updateTrip.php" method="post">
-              <input type="hidden" name="user" value= ' . $user . ' />
-              <label for="Origin">Origin:</label><input type="text" name="Origin" /><br />
-              <label for="Destination">Destination:</label><input type="text" name="Destination" /><br />
-              <label for="dDate">Departure Date:</label><input type="date" name="dDate" /><br />
-              <label for="dTime">Departure Time:</label><input type="time" name="dTime" />
-
-              <p>Do you have a car: <p>
-              <input type="radio" name="Hascar" value="Yes" /> <label for="Hascar">Yes</label><br />
-              <input type="radio" name="Hascar" value="No" /> <label for="Hascar">No</label>
-              <p>If you have a car, how many seats can you offer:</p>
-              <input type="number" name="Seats" />
-              <input type="submit" value="Update" />
-            </form>
+            <h3>Update Profile</h3>
             
             <br /><br />
             
-            <form id="unsubscribe" action="deleteMember.php" method="post">
-              <input type="hidden" name="user" value=' . $user . ' />
-              <input type="submit" value="Unsubscribe">
-            </form>
+            <p> Want to leave runwme? Shoot us an email, and we'll take you off our database. </p>
             
             <br />
 
-            <a href="index.php"> Return to Homepage </a>
+            <a href="index.php" style="vertical-align: baseline;"> Return to Homepage </a>
 
           </center>
         </body>
       </html>
-      '
