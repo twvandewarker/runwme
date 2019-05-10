@@ -8,7 +8,7 @@
 echo $sqlt;
 
   // Again, Send the request
-  $result = mysql_query($sqlt);
+  $result = mysqli_query($conn, $sqlt);
 
 echo $result;
 
@@ -17,11 +17,11 @@ echo $result;
     die("SQL Error Getting User Information: " . mysql_error($conn));
   }
   else {
-  	$found = number_format(mysql_num_rows($result));
-  	$row = mysql_fetch_array($result);
+  	$found = number_format(mysqli_num_rows($result));
+  	$row = mysqli_fetch_array($result);
   	$hash_returned = $row["password_hash"];    //find password hash
   }
 
-  mysql_close($conn);
+  mysqli_close($conn);
 
 ?>
