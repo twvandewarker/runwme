@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
     <title>runw/me addmember</title>
   </head>
   
@@ -43,7 +44,7 @@ echo "Finished readDb.php";
            // Send to login page in newly created user
            echo '
            <p>Account created, sending you to login page.</p>
-           <meta http-equiv="refresh" content="3"; url="login.html" />
+           <meta http-equiv="refresh" content="3; url=login.html" />
            ';
         }
         else {
@@ -57,7 +58,7 @@ echo "Finished readDb.php";
      else {
           echo '
           <p>Username already exists. Please log-in. Redirecting you home. </p>
-          <meta http-equiv="refresh" content="3"; url="index.html" />
+          <meta http-equiv="refresh" content="3; url=index.html" />
           ';
      }
 ?> 
