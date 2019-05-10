@@ -34,10 +34,11 @@ echo '
             include("getMatches.php");
             
             if($found2) {
+            include ("connectDb.php");
             foreach ($matches as &$id){
                 echo $id;
-                $query = "SELECT * FROM runwme_users WHERE username = '$id'";
-                $newresult = mysqli_query($conn, $query);
+                $query2 = "SELECT * FROM runwme_users WHERE username = '$id'";
+                $newresult = mysqli_query($conn, $query2);
                 $newrow = mysql_fetch_assoc($newresult); 
                 echo '<div>
                 <img src ="runman.png" align="center" style="width:50%"/>
@@ -45,10 +46,10 @@ echo '
                 <p style="font-size:80%" align=center> ' . $newrow["location_x"] . ',  ' . $newrow["location_y"] . '</p>
                 <p align=center> Bio: ' . $newrow["bio"] . '</p> 
                 </div>';
-                } 
+                }
                  
             }
-            
+            mysqli_close($conn); 
             echo '
                 </div>
 <br />
