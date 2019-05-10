@@ -30,7 +30,7 @@ echo '
               <br />
                 <div class="tiles">
                 ';
-                
+                /*
             include("getMatches.php")
             if($found2) {
             foreach ($matches as &$id){
@@ -43,7 +43,7 @@ echo '
                 <p style="font-size:80%" align=center> ' . $row["location_x"] . ',  ' . $row["location_y"] . '</p>
                 <p align=center> Bio: ' . $row["bio"] . '</p> 
                 <div>'
-            }  
+            }  */
             echo '
                 </div>
 <br />
