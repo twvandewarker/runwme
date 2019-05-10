@@ -1,14 +1,12 @@
-<?php
-
-echo '
+<!DOCTYPE html>
 <html>
   <head>
     <title>runw/me addmember</title>
   </head>
   
   <body>
-';
 
+<?php
   //get variables
   $user = $_POST["User"];
   $pass = $_POST["Pass"];
