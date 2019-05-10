@@ -45,7 +45,7 @@ echo '
                 <p style="font-size:80%" align=center> ' . $newrow["location_x"] . ',  ' . $newrow["location_y"] . '</p>
                 <p align=center> Bio: ' . $newrow["bio"] . '</p> 
                 <p align=center>' . $newrow["contact_info"] . '</p> 
-                <div>';
+                </div>';
                 }
             
             mysqli_close($conn); 
