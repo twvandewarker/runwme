@@ -31,7 +31,7 @@ echo '
                 <div class="tiles">
                 ';
              
-            include("getBesties.php") /*
+            include("getBesties.php"); /*
             if($found) {
             include ("connectDb.php");
                /*
