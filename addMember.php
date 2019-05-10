@@ -7,6 +7,9 @@
   <body>
 
 <?php
+
+echo "Testing php";
+
   //get variables
   $user = $_POST["User"];
   $pass = $_POST["Pass"];
