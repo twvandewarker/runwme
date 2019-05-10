@@ -23,12 +23,14 @@ echo "posted entered user and pass";
         </body>
         </html>
      ';
-
   }
-  else {
-  echo "just before readDb";
 
+  else {
+    echo "just before readDb";
+/*
     include ("readDb.php");
+
+    echo "right after readdb";
 
     if ($found == 0) {
 
@@ -55,7 +57,8 @@ echo "posted entered user and pass";
         include("profile.php");
       }
     }
-  }
+*/
+}
 
 ?>
 
