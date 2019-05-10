@@ -1,3 +1,13 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Password Verification</title>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+    </head>
+
+    <body>
+
 <?php
 
   $user = isset($user) ? $user : $_POST["User"];
@@ -5,17 +15,12 @@
 
   if (!$user or !$pass) {
 
-    echo '
-    <html>
-      <head>
-        <title>Empty fields</title>
-      </head>
-      <body bgcolo="white" text="black">
-        <p>Empty Field. Please try again. Redirecting you back.</p> 
+     echo '
+     <p>Empty Field. Please try again. Redirecting you back.</p> 
         <meta http-equiv="refresh" content="3; url=index.html" />
-      </body>
-    </html>
-    ';
+        </body>
+        </html>
+     ';
 
   } else {
 
@@ -24,31 +29,21 @@
     if ($found == 0) {
 
       echo '
-      <html>
-        <head>
-          <title> Username does not exist </title>
-        </head>
-        <body bgcolor="white" text="black">
           <p>Username not found. Please try again. Redirecting you back.</p>
           <meta http-equiv="refresh" content="3; url=index.html" />
-        </body>
-      </html>
+          </body>
+          </html>
       ';
 
     } else {
       
-      if ($pass != $passdB) {
+      if (!password_verify($pass, $hash_returned) {
 
         echo '
-        <html>
-          <head>
-            <title>Incorrect Password</title>
-          </head>
-          <body bgcolor="white" text="black">
             <p>Wrong password. Please try again. Redirecting you back.</p>
             <meta http-equiv="refresh" content="3; url=index.php" />
-          </body>
-        </html>
+            </body>
+            </html>
         ';
 
       } else {
