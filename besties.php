@@ -40,7 +40,7 @@ echo '
                 $newresult = mysqli_query($conn, $query2);
                 $newrow = mysqli_fetch_array($newresult); 
                 echo '<div>
-                <img src ="runman.png" align="center" style="height:20%"/>
+                <img src ="runman.png" align="center" style="width:50%"/>
                 <p style="font-size:150%" align=center> ' . $newrow["real_name"] . '</p>
                 <p style="font-size:80%" align=center> ' . $newrow["location_x"] . ',  ' . $newrow["location_y"] . '</p>
                 <p align=center> Bio: ' . $newrow["bio"] . '</p> 
