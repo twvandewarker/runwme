@@ -52,20 +52,14 @@ include ("connectDb.php");
       }
                
       mysqli_close($conn);
-    	
-    } else {
-      echo '
-           <p>You didn\'t include all the information. Please Try Again. Redirecting you to Registration. <p/>
-           <meta http-equiv="refresh" content="3; URL=newMember.html">
-           ';
-      }
-
+    
   } else {
-    echo '
+    /echo '
       <p>Username already exists. Please log-in. Redirecting you home. <p/>
       <meta http-equiv="refresh" content="3; url=index.html" />
     ';
   }
+ 
 
 echo '
 </body>
