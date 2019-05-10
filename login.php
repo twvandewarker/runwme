@@ -12,7 +12,7 @@
       </head>
       <body bgcolo="white" text="black">
         <p>Empty Field. Please try again. Redirecting you back.</p> 
-        <meta http-equiv="refresh" content="3; url=index.php" />
+        <meta http-equiv="refresh" content="3; url=index.html" />
       </body>
     </html>
     ';
@@ -30,7 +30,7 @@
         </head>
         <body bgcolor="white" text="black">
           <p>Username not found. Please try again. Redirecting you back.</p>
-          <meta http-equiv="refresh" content="3; url=index.php" />
+          <meta http-equiv="refresh" content="3; url=index.html" />
         </body>
       </html>
       ';
