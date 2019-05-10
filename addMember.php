@@ -19,6 +19,9 @@
   $bio = $_POST["Bio"];
   $info= $_POST["Contactinfo"];
 
+echo "Started php, made variables from post";
+
+/*
   //get variables from readDB.php
   include ("readDb.php");
 
@@ -61,7 +64,7 @@ include ("connectDb.php");
       <meta http-equiv="refresh" content="3; url=index.html" />
     ';
   }
-
+*/
 ?>
 </body>
 </html>
