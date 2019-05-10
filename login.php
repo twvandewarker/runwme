@@ -37,6 +37,8 @@
 
     }
     else {
+echo "pass: " . $pass . "<br />";
+echo "hash: " . $hash . "<br />";          
 echo "about to test password <br />";
       /*if (password_verify($pass, $hash_returned) {
         include("profile.php");
