@@ -65,3 +65,10 @@ option {
     padding: 8px 8px;
     color: black;
 }
+
+.bio_box{
+  width:50%;
+  position: relative;
+  display: inline-block;
+  height: auto;
+ }
