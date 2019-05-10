@@ -31,7 +31,7 @@ echo '
                 <div class="tiles">
                 ';
                 
-            //include("getMatches.php")
+            include("getMatches.php");
             /*
             if($found2) {
             foreach ($matches as &$id){
