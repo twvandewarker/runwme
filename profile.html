@@ -2,29 +2,35 @@
 <head>
     <title> "runwme ' . $row["real_name"] . '"</title>
 	<link rel="stylesheet" type="text/css" href="style.css" />
+   
     </head>
           <body>
           
               <img src ="logo.png" align="top" style="height:10%"/>
             <center>
               <br />
-              <p>Hi ' . $row["real_name"] . ', welcome back! Here is your profile:</p>
+              <p style="font-size:120%">Hi ' . $row["real_name"] . ', welcome back! Here is your profile:</p>
               <br />
-
-                <p style="font-size:120%" align=center> ' . $row["real_name"] . '</p>
+                <div class="prof_box">
+                <img src ="runman.png" align="center" style="height:20%"/>
+                <p style="font-size:150%" align=center> ' . $row["real_name"] . '</p>
                 <p style="font-size:80%" align=center> ' . $row["username"] . '</p>
                 <p style="font-size:80%" align=center> ' . $row["location_x"] . ',  ' . $row["location_y"] . '</p>
                 <p style="font-size:80%" align=center> ' . $row["contact_info"] . '</p>
-                <div class="bio_box"> <p align=center> ' . $row["bio"] . '</p> </div>
+                <p align=center> Bio: ' . $row["bio"] . '</p> 
+                </div>
 <br />
               <p>Hi Rhea, welcome back! Here is your profile:</p>
               <br />
-
+    <div class="prof_box">
+                <img src ="runman.png" align="center" style="height:20%"/>
                 <p style="font-size:150%" align=center> Rhea</p>
                 <p style="font-size:80%" align=center> rheab</p>
                 <p style="font-size:80%" align=center> 71.4834782,  40.3984</p>
                 <p style="font-size:80%" align=center> (609)-275-5767</p>
-                <div class="bio_box"> <p align=center>  Note blocks were added to Minecraft alongside charcoal, lapis lazuli, dispensers, cake and squid in version Beta 1.2, which was released on 13 January 2011. That makes them seven years old, probably older than some of our youngest players. Right click to tune, trigger to play were the instructions given in the release notes at the time, which still hold true today. When you hit one or give it a redstone pulse, a little note will pop out of the top and anyone within 48 blocks will hear a sound - with the volume decreasing as you get further away.</p> </div>
+                <p style="font-size:80%" align=center> WALK BIKE</p>
+                <p style="font-size:80%" align=center> MM ME MA ThE FE </p>
+                <p align=center> Bio: Note blocks were added to Minecraft alongside charcoal, lapis lazuli, dispensers, cake and squid in version Beta 1.2, which was released on 13 January 2011. That makes them seven years old, probably older than some of our youngest players. Right click to tune, trigger to play were the instructions given in the release notes at the time, which still hold true today. When you hit one or give it a redstone pulse, a little note will pop out of the top and anyone within 48 blocks will hear a sound - with the volume decreasing as you get further away.</p> </div>
 
 
             <br /><br />

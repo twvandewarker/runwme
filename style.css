@@ -66,9 +66,12 @@ option {
     color:black;
 }
 
-.bio_box {
-  width:50%;
-  position:relative;
-  display:inline-block;
-  height:auto;
- }
+.prof_box {
+    width:50%;
+    position:relative;
+    border-radius: 8px;
+    padding: 8px 8px;
+    border: 1px solid gray;
+    display:inline-block;
+    height:auto;
+}
