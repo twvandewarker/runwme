@@ -12,6 +12,11 @@
   $user = isset($user) ? $user : $_POST["User"];
   $pass = isset($pass) ? $pass : $_POST["Pass"];
 
+echo "posted entered user and pass:";
+echo $user;
+echo $pass;
+
+/*
   if (!$user or !$pass) {
 
      echo '
@@ -51,7 +56,7 @@
       }
     }
   }
-
+*/
 ?>
 
 
