@@ -1,3 +1,6 @@
+<?php
+
+echo '
 <!DOCTYPE html>
 <html>
   <head>
@@ -5,8 +8,7 @@
   </head>
   
   <body>
-
-<?php
+';
 
   // variables from form
   $user = $_POST["User"];
@@ -33,7 +35,7 @@ echo "Finished readDb.php";
        $hash = password_hash($pass, PASSWORD_DEFAULT);
 
 echo "Hashed password";
-/*
+
 include ("connectDb.php");
 
        $sql = "INSERT INTO runwme_users (username, real_name, password_hash, run_walk_bike, times_available, location_x, location_y, bio, contact_info) VALUES ('$user' ,'$name', '$hash', '$mode', '$avail', '$xcoords', '$ycoords', '$bio', '$info')";
@@ -64,7 +66,7 @@ include ("connectDb.php");
       <meta http-equiv="refresh" content="3; url=index.html" />
     ';
   }
-*/
+
 ?>
 </body>
 </html>
