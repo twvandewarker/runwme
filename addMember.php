@@ -28,11 +28,11 @@
         $hash = password_hash($pass, PASSWORD_DEFAULT);
 
         include ("connectDb.php");
-        include("transformations.php");
+        //include("transformations.php");
         echo ''. $avail .' '. $mode .'';
         //$times = TimeToNum($avail);
         //$modes = ModeToNum($mode);
-        $sql = "INSERT INTO runwme_users (username, real_name, password_hash, run_walk_bike, times_available, location_x, location_y, bio, contact_info) VALUES ('$user' ,'$name', '$hash', '$modes', '$times', '$xcoords', '$ycoords', '$bio', '$info')";
+        $sql = "INSERT INTO runwme_users (username, real_name, password_hash, run_walk_bike, times_available, location_x, location_y, bio, contact_info) VALUES ('$user' ,'$name', '$hash', '$mode', '$avail', '$xcoords', '$ycoords', '$bio', '$info')";
 
         $result = mysqli_query($conn, $sql);
 
