@@ -1,5 +1,5 @@
 <?php
-/*
+
 // Connecting database
 include ("connectDb.php");
 
@@ -49,7 +49,7 @@ echo "Finished setting sqlt\n";
     }
 
   }
-  */
+  
 
   mysqli_close($conn);
 
