@@ -43,7 +43,7 @@ echo "posted entered user and pass";
 
     }
     else {
-      if (! password_verify($pass, $hash_returned) {
+/*      if (! password_verify($pass, $hash_returned) {
 
         echo '
             <p>Wrong password. Please try again. Redirecting you back.</p>
@@ -55,7 +55,7 @@ echo "posted entered user and pass";
       }
       else {
         include("profile.php");
-      }
+      } */
     }
   }
 
