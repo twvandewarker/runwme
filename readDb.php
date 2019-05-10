@@ -6,6 +6,7 @@
   $sqlt = "SELECT * FROM runwme_users WHERE username = '$user'";
 
 echo $sqlt;
+echo $conn;
 
   // Again, Send the request
   $result = mysqli_query($conn, $sqlt);
