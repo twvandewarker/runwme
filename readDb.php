@@ -11,7 +11,7 @@
 
   // See if we get an OK result
   if (!$result) {
-    die("SQL Error Getting User Information: " . mysql_error($conn));
+    die("SQL Error Getting User Information: " . mysqli_error($conn));
   }
   else {
   	$found = number_format(mysqli_num_rows($result));
