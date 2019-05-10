@@ -3,7 +3,7 @@
 // Connecting database
 include ("connectDb.php");
 
-echo "Finished include\n";
+echo '<p>Finished include</p>';
 
   $sqlt = "SELECT location_x, location_y, times_available, run_walk_bike FROM runwme_users WHERE username = '$user'";
 
