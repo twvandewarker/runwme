@@ -9,7 +9,7 @@
 <?php
 
 echo "Testing php";
-/*
+
   //get variables
   $user = $_POST["User"];
   $pass = $_POST["Pass"];
@@ -22,7 +22,7 @@ echo "Testing php";
   $info= $_POST["Contactinfo"];
 
 echo "Created variables";
-*/
+/*
   //get variables from readDB.php
   include ("readDb.php");
 
@@ -65,7 +65,7 @@ echo "connected db";
       <meta http-equiv="refresh" content="3; url=index.html" />
     ';
   }
-
+*/
 ?>
 </body>
 </html>
