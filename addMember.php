@@ -41,8 +41,10 @@ echo "Finished readDb.php";
 
         if ($result==1) {
            // Send to login page in newly created user
+           echo '
            <p>Account created, sending you to login page.</p>
            <meta http-equiv="refresh" content="3"; url="login.html" />
+           ';
         }
         else {
           echo '
