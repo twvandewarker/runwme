@@ -21,12 +21,12 @@
 
 echo "Started php, made variables from post";
 
-/*
+
   //get variables from readDB.php
   include ("readDb.php");
 
 echo "Finished readDb.php";
-
+/*
   //add users now
   if ($found == 0) {
        // Hash password
