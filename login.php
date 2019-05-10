@@ -27,11 +27,11 @@ echo "posted entered user and pass";
 
   else {
     echo "just before readDb";
-/*
+
     include ("readDb.php");
 
     echo "right after readdb";
-
+/*
     if ($found == 0) {
 
       echo '
