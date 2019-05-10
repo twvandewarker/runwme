@@ -31,10 +31,10 @@ echo '
                 <div class="tiles">
                 ';
              
-            include("getBesties.php"); /*
+            include("getBesties.php"); 
             if($found) {
             include ("connectDb.php");
-               /*
+               
             foreach ($besties as &$id){
                 $query2 = "SELECT * FROM runwme_users WHERE username = '$id'";
                 $newresult = mysqli_query($conn, $query2);
@@ -49,7 +49,7 @@ echo '
                 }
             
             mysqli_close($conn); 
-            }*/
+            }
             echo '
                 </div>
 <br />
