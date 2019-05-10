@@ -28,7 +28,7 @@ echo '
               <br /> <br /> 
               <p style="font-size:120%">Hi ' . $row["real_name"] . ', welcome back! Here some potential friends to run with:</p>
               <br />
-                <div class="tiles">
+                <div class="tiles" style="width:80%">
                 ';
                 
             include("getMatches.php");
