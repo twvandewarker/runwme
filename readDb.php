@@ -8,7 +8,6 @@
   // Perform query
   $result = mysqli_query($conn, $query);
 
-echo $result
 
   // See if we get an OK result
   if (!$result) {
