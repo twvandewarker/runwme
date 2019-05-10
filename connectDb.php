@@ -13,7 +13,7 @@ echo "Connected";
 
   $dbname = "twv_runwme";     // CHANGE IT TO YOUR DATABASE NAME
 
-  mysql_select_db($dbname);
+  mysqli_select_db($dbname);
 
 echo "Connected db";
 ?>
