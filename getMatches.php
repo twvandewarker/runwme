@@ -12,8 +12,6 @@
      
     include ("connectDb.php");
     $matches = array();
-  	$found = number_format(mysqli_num_rows($user_result));
-  	$urow = mysqli_fetch_array($user_result);
     
     if ($found) {
 
@@ -29,10 +27,10 @@
         }
         else {
             $found2 = number_format(mysqli_num_rows($all_results));
-            while ($row = mysqli_fetch_array($all_results)){
-                if (($urow["times_available"] & $row["times_available"]) &&
-                ($urow["run_walk_bike"] & $row["run_walk_bike"])){
-                    array_push($matches, $row["username"]);
+            while ($arow = mysqli_fetch_array($all_results)){
+                if (($row["times_available"] & $arow["times_available"]) &&
+                ($row["run_walk_bike"] & $arow["run_walk_bike"])){
+                    array_push($matches, $arow["username"]);
                 }
                 
             }
