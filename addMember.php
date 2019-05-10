@@ -40,8 +40,9 @@ echo "Finished readDb.php";
         $result = mysqli_query($conn, $sql);
 
         if ($result==1) {
-           // login the user if just created
-           include("login.php");
+           // Send to login page in newly created user
+           <p>Account created, sending you to login page.</p>
+           <meta http-equiv="refresh" content="3"; url="login.html" />
         }
         else {
           echo '
@@ -54,7 +55,7 @@ echo "Finished readDb.php";
      else {
           echo '
           <p>Username already exists. Please log-in. Redirecting you home. </p>
-          <meta http-equiv="refresh" content="3; url=index.html" />
+          <meta http-equiv="refresh" content="3"; url="index.html" />
           ';
      }
 ?> 
