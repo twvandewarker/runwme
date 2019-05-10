@@ -11,7 +11,7 @@ echo "Finished setting sqlt\n";
 
   // Again, Send the request
   $user_result = mysqli_query($conn, $sqlt);
-
+/*
   // See if we get an OK result
   if (!$user_result) {
     die("SQL Error Getting User Information: " . mysqli_error($conn));
@@ -49,6 +49,7 @@ echo "Finished setting sqlt\n";
     }
 
   }
+  */
 
   mysqli_close($conn);
 
