@@ -8,7 +8,7 @@
         $besties = explode (",", $stringbesties);        
     }
 
-  }
+  
 
 
 ?>
