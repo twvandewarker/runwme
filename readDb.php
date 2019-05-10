@@ -8,20 +8,20 @@
 echo $sqlt;
 
   // Again, Send the request
-  $result = mysqli_query($conn, $sqlt);
+  $result = mysql_query($sqlt);
 
 echo $result;
 
   // See if we get an OK result
   if (!$result) {
-    die("SQL Error Getting User Information: " . mysqli_error($conn));
+    die("SQL Error Getting User Information: " . mysql_error($conn));
   }
   else {
-  	$found = number_format(mysqli_num_rows($result));
-  	$row = mysqli_fetch_array($result);
+  	$found = number_format(mysql_num_rows($result));
+  	$row = mysql_fetch_array($result);
   	$hash_returned = $row["password_hash"];    //find password hash
   }
 
-  mysqli_close($conn);
+  mysql_close($conn);
 
 ?>
