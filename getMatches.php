@@ -1,16 +1,12 @@
 <?php
 
-// Connecting database
-include ("connectDb.php");
-
-  $sqlt = "SELECT * FROM runwme_users WHERE username = '$user'";
 
 echo "Finished setting sqlt\n";
 /
   // Again, Send the request
-  $userresult = mysqli_query($conn, $sqlt);
-  echo $userresult;
+  echo $user;
 /*
+include ("connectDb.php");
   // See if we get an OK result
   if (!$user_result) {
     die("SQL Error Getting User Information: " . mysqli_error($conn));
@@ -48,8 +44,9 @@ echo "Finished setting sqlt\n";
     }
 
   }
+    mysqli_close($conn);
   */
 
-  mysqli_close($conn);
+
 
 ?>
