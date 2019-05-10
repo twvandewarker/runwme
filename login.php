@@ -42,7 +42,7 @@
     }
     else {
 echo "about to test password <br />";
-echo $hash_returned . "<br />";
+//echo $hash_returned . "<br />";
       /*if (password_verify($pass, $hash_returned) {
         include("profile.php"); */
       }
