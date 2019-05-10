@@ -43,19 +43,18 @@ echo "posted entered user and pass";
 
     }
     else {
-/*      if (! password_verify($pass, $hash_returned) {
+      if (password_verify($pass, $hash_returned) {
+        include("profile.php");
+      }
 
+      else {
         echo '
             <p>Wrong password. Please try again. Redirecting you back.</p>
             <meta http-equiv="refresh" content="3; url=login.html" />
             </body>
             </html>
         ';
-
       }
-      else {
-        include("profile.php");
-      } */
     }
   }
 
