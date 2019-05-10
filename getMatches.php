@@ -2,7 +2,7 @@
 
 
 echo "Finished setting sqlt\n";
-/
+
   // Again, Send the request
   echo $user;
 /*
