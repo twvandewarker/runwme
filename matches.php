@@ -39,7 +39,7 @@ echo '
                 //$result = mysqli_query($conn, $query);
                 //$row = mysql_fetch_assoc($result); 
                 echo '<div>
-                <img src ="runman.png" align="center" style="height:20%"/>
+                <img src ="runman.png" align="center" style="width:50%"/>
                 <p style="font-size:150%" align=center> ' . $row["real_name"] . '</p>
                 <p style="font-size:80%" align=center> ' . $row["location_x"] . ',  ' . $row["location_y"] . '</p>
                 <p align=center> Bio: ' . $row["bio"] . '</p> 
