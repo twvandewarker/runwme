@@ -45,7 +45,9 @@ select {
 .blink {
     width: 128px;
     font-size:100%;
+    float:right;
     padding: 8px 8px;
+    margin: 8px 8px;
     color: black;
     box-sizing: border-box;
     border-radius: 4px;
