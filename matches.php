@@ -26,7 +26,7 @@ echo '
           <div>
             <center>
               <br /> <br /> 
-              <p style="font-size:120%">Hi ' . $row["real_name"] . ', welcome back! Here some potential friends to run with:</p>
+              <p style="font-size:120%">Hi ' . $row["real_name"] . ', welcome back! Here are some potential friends to run with:</p>
               <br />
                 <div class="tiles" style="width:80%">
                 ';
