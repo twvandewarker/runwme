@@ -25,8 +25,6 @@
 
     include ("readDb.php");
 
-    echo $found;
-
     if ($found == 0) {
 
       echo '
