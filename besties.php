@@ -30,7 +30,7 @@ echo '
               <br />
                 <div class="tiles">
                 ';
-                
+             /*   
             include("getBesties.php")
             if($found) {
             include ("connectDb.php");
@@ -47,9 +47,9 @@ echo '
                 <p align=center>' . $newrow["contact_info"] . '</p> 
                 <div>';
                 }
-            */
+            
             mysqli_close($conn); 
-            }
+            }*/
             echo '
                 </div>
 <br />
