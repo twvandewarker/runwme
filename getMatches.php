@@ -12,7 +12,7 @@ echo "Finished setting sqlt\n";
     echo 'died';
   }
   else {
-      echo 'passed'; /*
+     
     include ("connectDb.php");
     $matches = array();
   	$found = number_format(mysqli_num_rows($user_result));
@@ -20,7 +20,7 @@ echo "Finished setting sqlt\n";
     
     if ($found) {
 
-          $sqlt2 = "SELECT username, location_x, location_y, times_available, run_walk_bike FROM runwme_users";
+          $sqlt2 = "SELECT * FROM runwme_users";
 
         echo "Finished setting sqlt\n";
 
@@ -44,7 +44,7 @@ echo "Finished setting sqlt\n";
         }
         
     }
-    mysqli_close($conn); */
+    mysqli_close($conn); 
   }
     
   
