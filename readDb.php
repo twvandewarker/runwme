@@ -2,9 +2,7 @@
 
   // Connecting database
   include ("connectDb.php");
-echo "Finished connectDb.php";
 
-  // Here is another way of making an SQL query.
   $sqlt = "SELECT * FROM ridewme_users WHERE username = '$user'";
 
   // Again, Send the request

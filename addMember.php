@@ -8,9 +8,7 @@
 
 <?php
 
-echo "Testing php";
-
-  //get variables
+  // variables from form
   $user = $_POST["User"];
   $pass = $_POST["Pass"];
   $name = $_POST["Name"];
@@ -21,22 +19,16 @@ echo "Testing php";
   $bio = $_POST["Bio"];
   $info= $_POST["Contactinfo"];
 
-echo "Created variables";
-
   //get variables from readDB.php
   include ("readDb.php");
-echo "readDb.php";
-/*
+
 
   //add users now
   if ($found == 0) {
        // Hash password
        $hash = password_hash($pass, PASSWORD_DEFAULT);
-echo "hashed password";
 
 include ("connectDb.php");
-
-echo "connected db";
 
        $sql = "INSERT INTO runwme_users (username, real_name, password_hash, run_walk_bike, times_available, location_x, location_y, bio, contact_info) VALUES ('$user' ,'$name', '$hash', '$mode', '$avail', '$xcoords', '$ycoords', '$bio', '$info')";
 
@@ -66,7 +58,7 @@ echo "connected db";
       <meta http-equiv="refresh" content="3; url=index.html" />
     ';
   }
-*/
+
 ?>
 </body>
 </html>
