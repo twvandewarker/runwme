@@ -16,7 +16,7 @@
   // See if we get an OK result
   if (!$result) {
       echo 'died';
-    die("SQL Error Getting User Information: " . mysql_error($conn));
+    die("SQL Error Getting User Information: " . mysqli_error($conn));
   }
   else {
     
