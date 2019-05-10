@@ -34,16 +34,16 @@ echo '
             include("getMatches.php");
             
             if($found2) {
-            foreach ($matches as &$id){
+            foreach ($matches as &$id){/*
                 $query = "SELECT username, real_name, location_x, location_y, times_available, run_walk_bike, bio FROM runwme_users WHERE username = '$id'";
                 $result = mysqli_query($conn, $query);
-                $row = mysql_fetch_assoc($result)
+                $row = mysql_fetch_assoc($result) */
                 echo '<div>
                 <img src ="runman.png" align="center" style="height:20%"/>
                 <p style="font-size:150%" align=center> ' . $row["real_name"] . '</p>
                 <p style="font-size:80%" align=center> ' . $row["location_x"] . ',  ' . $row["location_y"] . '</p>
                 <p align=center> Bio: ' . $row["bio"] . '</p> 
-                <div>'
+                <div>';
             }  
             echo '
                 </div>
