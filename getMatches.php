@@ -8,7 +8,7 @@ echo '<p>Finished include</p>';
   $sqlt = "SELECT location_x, location_y, times_available, run_walk_bike FROM runwme_users WHERE username = '$user'";
 
 echo "Finished setting sqlt\n";
-
+/*
   // Again, Send the request
   $user_result = mysqli_query($conn, $sqlt);
 
@@ -49,7 +49,7 @@ echo "Finished setting sqlt\n";
     }
 
   }
-  
+  */
 
   mysqli_close($conn);
 
