@@ -12,8 +12,6 @@
   $user = isset($user) ? $user : $_POST["User"];
   $pass = isset($pass) ? $pass : $_POST["Pass"];
 
-echo "posted entered user and pass";
-
 
   if (!$user or !$pass) {
 
@@ -43,8 +41,10 @@ echo "posted entered user and pass";
 
     }
     else {
-      if (password_verify($pass, $hash_returned) {
-        include("profile.php");
+echo "about to test password <br />";
+echo $hash_returned . "<br />";
+      /*if (password_verify($pass, $hash_returned) {
+        include("profile.php"); */
       }
 
       else {
