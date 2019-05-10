@@ -4,6 +4,7 @@
         <link rel="stylesheet" type="text/css" href="style.css" />
 <?php
 $user = isset($user) ? $user : $_POST["User"];
+include ("readDb.php");
 echo '
 <html>
 <head>
