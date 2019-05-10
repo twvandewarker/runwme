@@ -3,7 +3,11 @@
   // Connecting database
   include ("connectDb.php");
 
-  $sqlt = "SELECT * FROM ridewme_users WHERE username = '$user'";
+echo "Finished include\n";
+
+  $sqlt = "SELECT * FROM runwme_users WHERE username = '$user'";
+
+echo "Finished setting sqlt\n";
 
   // Again, Send the request
   $result = mysqli_query($conn, $sqlt);
