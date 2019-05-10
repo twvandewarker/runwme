@@ -5,7 +5,7 @@
     if ($found) {
         $stringbesties = $row["buddy_list"];
         echo $stringbesties;
-        //$besties = explode (",", $stringbesties);        
+        $besties = explode (",", $stringbesties);        
     }
 
   }
