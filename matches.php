@@ -36,14 +36,14 @@ echo '
             if($found2) {
             foreach ($matches as &$id){
                 echo $id;
-                //$query = "SELECT username, real_name, location_x, location_y, times_available, run_walk_bike, bio FROM runwme_users WHERE username = '$id'";
-                //$result = mysqli_query($conn, $query);
-                //$row = mysql_fetch_assoc($result); 
+                $query = "SELECT * FROM runwme_users WHERE username = '$id'";
+                $newresult = mysqli_query($conn, $query);
+                $newrow = mysql_fetch_assoc($newresult); 
                 echo '<div>
                 <img src ="runman.png" align="center" style="width:50%"/>
-                <p style="font-size:150%" align=center> ' . $row["real_name"] . '</p>
-                <p style="font-size:80%" align=center> ' . $row["location_x"] . ',  ' . $row["location_y"] . '</p>
-                <p align=center> Bio: ' . $row["bio"] . '</p> 
+                <p style="font-size:150%" align=center> ' . $newrow["real_name"] . '</p>
+                <p style="font-size:80%" align=center> ' . $newrow["location_x"] . ',  ' . $newrow["location_y"] . '</p>
+                <p align=center> Bio: ' . $newrow["bio"] . '</p> 
                 </div>';
                 } 
                  
