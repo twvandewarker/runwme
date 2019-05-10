@@ -1,16 +1,22 @@
 <?php
 echo '
-          <html>
+<html>
 <head>
     <title> "runwme ' . $row["real_name"] . '"</title>
 	<link rel="stylesheet" type="text/css" href="style.css" />
    
     </head>
-          <body>
-          
-              <img src ="logo.png" align="top" style="height:10%"/>
+        <body>
+            <ul class="menu">
+              
+              <li><a href="profile.php">Profile</a></li>
+              <li><a href="#contact">Matches</a></li>
+              <li><a href="#about">Besties</a></li>
+              <img src ="logo.png" />
+            </ul>
+          <div>
             <center>
-              <br />
+              <br /> <br /> 
               <p style="font-size:120%">Hi ' . $row["real_name"] . ', welcome back! Here is your profile:</p>
               <br />
                 <div class="prof_box">
@@ -21,9 +27,7 @@ echo '
                 <p style="font-size:80%" align=center> ' . $row["contact_info"] . '</p>
                 <p align=center> Bio: ' . $row["bio"] . '</p> 
                 </div>
-
-
-            <br /><br />
+                <br />
 
             <h3>Update Profile</h3>
             
@@ -32,7 +36,7 @@ echo '
             <p> Want to leave runwme? Shoot us an email, and we\'ll take you off our database. </p>
             
             <br />
-
+</div>
             <a href="index.html" style="vertical-align: baseline;"> Return to Homepage </a>
 
           </center>

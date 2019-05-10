@@ -15,14 +15,7 @@ body {
     float: right;
 }
 
-.menu-bar {
-    white-space: nowrap;
-    float: right;
-    background-color: grey;
-    padding: 8px 8px;
-    border-bottom: 1px solid black;
-    width:100%
-}
+
 
 input {
     width: 100%;
@@ -58,6 +51,16 @@ select {
     border-radius: 4px;
     border: 1.5px solid DodgerBlue;
 }
+.tabs {
+    width: 25%;
+    font-size:100%;
+    padding: 8px 8px;
+    color: black;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1.5px solid DodgerBlue;
+    float:left;
+}
 
 p1 {
     font-size:160%;
@@ -83,4 +86,36 @@ option {
     border: 1px solid gray;
     display:inline-block;
     height:auto;
+}
+
+.menu {
+  list-style-type: none;
+  white-space: nowrap;
+
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.menu li {
+  float: left;
+}
+
+.menu img {
+    width:128px; 
+    float: right;
+    padding: 8px 8px;
+}
+
+.menu li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.menu li a:hover {
+  background-color: #111;
 }

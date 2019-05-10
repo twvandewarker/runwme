@@ -5,13 +5,16 @@
    
     </head>
         <body>
-            <div class="menu-bar">
-              <img src ="logo.png" align=left style="height:5%"/>
-            <button type="button" align=left class="blink"> Matches </button> <button type="button" align=center class="blink"> Profile </button> <button type="button" align=right class="blink"> Besties </button>
-            </div>
-          
+            <ul class="menu">
+              
+              <li><a href="profile.php">Profile</a></li>
+              <li><a href="#contact">Matches</a></li>
+              <li><a href="#about">Besties</a></li>
+              <img src ="logo.png" />
+            </ul>
+          <div>
             <center>
-              <br /> <br /> <br />
+              <br /> <br /> 
               <p style="font-size:120%">Hi ' . $row["real_name"] . ', welcome back! Here is your profile:</p>
               <br />
                 <div class="prof_box">
@@ -45,7 +48,7 @@
             <p> Want to leave runwme? Shoot us an email, and we'll take you off our database. </p>
             
             <br />
-
+</div>
             <a href="index.html" style="vertical-align: baseline;"> Return to Homepage </a>
 
           </center>
