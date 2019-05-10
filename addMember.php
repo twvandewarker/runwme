@@ -22,10 +22,11 @@ echo "Testing php";
   $info= $_POST["Contactinfo"];
 
 echo "Created variables";
-/*
+
   //get variables from readDB.php
   include ("readDb.php");
-
+echo "readDb.php";
+/*
 
   //add users now
   if ($found == 0) {
