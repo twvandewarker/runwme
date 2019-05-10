@@ -34,7 +34,7 @@ echo '
             include("getBesties.php")
             if($found) {
             include ("connectDb.php");
-               
+               /*
             foreach ($besties as &$id){
                 $query2 = "SELECT * FROM runwme_users WHERE username = '$id'";
                 $newresult = mysqli_query($conn, $query2);
@@ -47,8 +47,9 @@ echo '
                 <p align=center>' . $newrow["contact_info"] . '</p> 
                 <div>';
                 }
-            }  
+            */
             mysqli_close($conn); 
+            }
             echo '
                 </div>
 <br />
