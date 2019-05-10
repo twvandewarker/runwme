@@ -12,10 +12,9 @@
   $user = isset($user) ? $user : $_POST["User"];
   $pass = isset($pass) ? $pass : $_POST["Pass"];
 
-echo "posted entered user and pass:";
-echo $pass;
+echo "posted entered user and pass";
 
-/*
+
   if (!$user or !$pass) {
 
      echo '
@@ -27,19 +26,21 @@ echo $pass;
 
   }
   else {
+  echo "just before readDb";
+
     include ("readDb.php");
 
     if ($found == 0) {
 
       echo '
           <p>Username not found. Please try again. Redirecting you back.</p>
-          <meta http-equiv="refresh" content="3; url=index.html" />
+          <meta http-equiv="refresh" content="3; url=login.html" />
           </body>
           </html>
       ';
 
-  }
-  else {
+    }
+    else {
       if (!password_verify($pass, $hash_returned) {
 
         echo '
@@ -55,7 +56,7 @@ echo $pass;
       }
     }
   }
-*/
+
 ?>
 
 
