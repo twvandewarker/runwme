@@ -4,7 +4,10 @@
   $dbhost = "localhost";
   $dbuser = "twv_travis";     // CHANGE IT TO YOUR DATABASE USER NAME
   $dbpass = "twv_4rwZpa45";    // CHANGE IT TO YOUR DATABASE PASSWORD
+  
+  $conn = mysqli_connect($dbhost, $dbuser, $dbpass) or die ("Error connecting to mysql");
+
   $dbname = "twv_runwme";     // CHANGE IT TO YOUR DATABASE NAME
-  $conn = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname) or die ("Error connecting to mysql");
-      
+
+  mysql_select_db($dbname);
 ?>

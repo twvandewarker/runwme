@@ -24,7 +24,6 @@
 
   //add users now
   if ($found == 0) {
-  
        // Hash password
        $hash = password_hash($pass, PASSWORD_DEFAULT);
 
@@ -45,10 +44,10 @@
     	
     } else {
       echo '
-    		<p>You didn\'t include all the information. Please Try Again. Redirecting you to Registration. <p/>
-        <meta http-equiv="refresh" content="3; URL=newMember.html">
-      ';
-    }
+           <p>You didn\'t include all the information. Please Try Again. Redirecting you to Registration. <p/>
+           <meta http-equiv="refresh" content="3; URL=newMember.html">
+           ';
+      }
 
   } else {
     echo '
@@ -58,3 +57,5 @@
   }
 
 ?>
+</body>
+</html>
