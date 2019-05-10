@@ -13,7 +13,7 @@
   $pass = isset($pass) ? $pass : $_POST["Pass"];
 
 echo "posted entered user and pass:";
-
+echo $user;
 
 /*
   if (!$user or !$pass) {
