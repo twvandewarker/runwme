@@ -17,7 +17,7 @@ echo "Finished setting sqlt\n";
     $matches = array();
   	$found = number_format(mysqli_num_rows($user_result));
   	$urow = mysqli_fetch_array($user_result);
-    
+    /*
     if ($found) {
 
           $sqlt2 = "SELECT * FROM runwme_users";
@@ -43,7 +43,7 @@ echo "Finished setting sqlt\n";
       
         }
         
-    }
+    } */
     mysqli_close($conn); 
   }
     
