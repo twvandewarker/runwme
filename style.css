@@ -127,12 +127,12 @@ option {
 
 .menu li button {
   display: block;
-  color: white;
+  color: black;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
-.menu li a:hover {
+.menu li button:hover {
   background-color: #111;
 }
