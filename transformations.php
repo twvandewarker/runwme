@@ -13,6 +13,13 @@ function TimeToNum($list) {
     }
 }
 
+function NumToMode($num){
+    $list = array();
+    for ( $i = 0; $i<3; $i++ ){
+        $list[i]= $num & (1<<i);}
+    }
+}
+
 function NumToTime($num){
     $list = array();
     for ( $i = 0; $i<21; $i++ ){
@@ -20,10 +27,5 @@ function NumToTime($num){
     }
 }
 
-function NumToMode($num){
-    $list = array();
-    for ( $i = 0; $i<3; $i++ ){
-        $list[i]= $num & (1<<i);}
-    }
-}
+
 ?>

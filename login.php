@@ -40,16 +40,17 @@
 echo "pass: " . $pass . "<br />";
 echo "hash: " . $hash . "<br />";          
 echo "about to test password <br />";
-      /*if (password_verify($pass, $hash_returned) {
-        include("profile.php");
-      } */
+      if (password_verify($pass, $hash_returned) {
+        //include("profile.php");
+        echo "good pass";
+      } 
 
-      //else {
+      else {
         echo '
             <p>Wrong password. Please try again. Redirecting you back.</p>
             <meta http-equiv="refresh" content="3; url=login.html" />
         ';
-      //}
+      }
     }
   }
 
