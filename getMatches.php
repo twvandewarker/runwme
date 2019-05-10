@@ -5,13 +5,15 @@ echo "Finished setting sqlt\n";
 
   // Again, Send the request
   echo $user;
-/*
-include ("connectDb.php");
+
   // See if we get an OK result
-  if (!$user_result) {
+  if (!$result) {
     die("SQL Error Getting User Information: " . mysqli_error($conn));
+    echo 'died';
   }
   else {
+      echo 'passed'; /*
+    include ("connectDb.php");
     $matches = array();
   	$found = number_format(mysqli_num_rows($user_result));
   	$urow = mysqli_fetch_array($user_result);
@@ -42,11 +44,8 @@ include ("connectDb.php");
         }
         
     }
-
+    mysqli_close($conn); */
   }
-    mysqli_close($conn);
-  */
-
-
-
+    
+  
 ?>
