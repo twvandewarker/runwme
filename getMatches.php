@@ -28,6 +28,7 @@
         else {
             $found2 = number_format(mysqli_num_rows($all_results));
             while ($arow = mysqli_fetch_array($all_results)){
+                echo 'here';
                 if (($row["times_available"] & $arow["times_available"]) &&
                 ($row["run_walk_bike"] & $arow["run_walk_bike"])){
                     array_push($matches, $arow["username"]);
