@@ -30,7 +30,7 @@ echo "posted entered user and pass";
 
     include ("readDb.php");
 
-    echo "right after readdb";
+    echo $found;
 /*
     if ($found == 0) {
 
