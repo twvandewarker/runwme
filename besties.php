@@ -46,6 +46,7 @@ echo '
                 <p align=center> Bio: ' . $newrow["bio"] . '</p> 
                 <p align=center>' . $newrow["contact_info"] . '</p> 
                 <div>';
+                }
             }  
             mysqli_close($conn); 
             echo '
