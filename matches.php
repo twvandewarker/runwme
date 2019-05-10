@@ -39,7 +39,7 @@ echo '
                 echo $id;
                 $query2 = "SELECT * FROM runwme_users WHERE username = '$id'";
                 $newresult = mysqli_query($conn, $query2);
-                $newrow = mysql_fetch_assoc($newresult); 
+                $newrow = mysqli_fetch_array($newresult); 
                 echo 'here';
                 echo '<div>
                 <img src ="runman.png" align="center" style="width:50%"/>
