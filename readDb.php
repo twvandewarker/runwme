@@ -5,7 +5,7 @@
 
 echo "Finished include\n";
 
-  $sqlt = "SELECT * FROM runwme_users WHERE username = '$user'";
+  $sqlt = "SELECT * FROM 'runwme_users' WHERE username = '$user'";
 
 echo "Finished setting sqlt\n";
 

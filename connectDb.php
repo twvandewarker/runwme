@@ -1,19 +1,13 @@
 <?php
 
-  // Connect to the database for the entry of the CSV stuff into the database.
+  // Connect to the database
   $dbhost = "localhost";
-  $dbuser = "twv_travis";     // CHANGE IT TO YOUR DATABASE USER NAME
-  $dbpass = "twv_4rwZpa45";    // CHANGE IT TO YOUR DATABASE PASSWORD
-
+  $dbuser = "twv_travis";
+  $dbpass = "twv_4rwZpa45";
+  $dbname = "twv_runwme";
 echo "Set connection variables";
 
-  $conn = mysqli_connect($dbhost, $dbuser, $dbpass) or die ("Error connecting to mysql");
-
-echo "Connected";
-
-  $dbname = "twv_runwme";     // CHANGE IT TO YOUR DATABASE NAME
-
-  mysqli_select_db($dbname);
+  $conn = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname) or die ("Error connecting to mysql");
 
 echo "Connected db";
 ?>
